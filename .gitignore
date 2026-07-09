@@ -1,0 +1,13 @@
+# Generated packages
+*.zip
+
+# Vercel local state
+.vercel/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs
+*.log

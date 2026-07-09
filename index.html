@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MEICONTADOR | Contabilidade Inteligente para MEI e Pequenas Empresas</title>
+<meta name="description" content="Contador especializado em MEI, Imposto de Renda e regularização empresarial em Vitória/ES. Abertura de MEI, DAS, declaração anual, planejamento tributário e consultoria. Atendimento 100% online.">
+<meta name="robots" content="index, follow">
+<!-- Domínio inicial gratuito na Vercel. Trocar quando houver domínio próprio. -->
+<link rel="canonical" href="https://meicontador-site.vercel.app/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://meicontador-site.vercel.app/">
+<meta property="og:title" content="MEICONTADOR | Descomplicando sua vida">
+<meta property="og:description" content="Contabilidade especializada para MEI e Pequenas Empresas. Atendimento humanizado, 100% online, em Vitória/ES.">
+<meta property="og:image" content="https://meicontador-site.vercel.app/assets/logo-full-light.png">
+<meta property="og:locale" content="pt_BR">
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="//wa.me">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<!-- Schema.org - Business Info -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "MEICONTADOR",
+  "image": "https://meicontador-site.vercel.app/assets/logo-full-light.png",
+  "description": "Contabilidade especializada para MEI e Pequenas Empresas.",
+  "url": "https://meicontador-site.vercel.app/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Capitão Domingos Correia da Rocha, 80, Ed. Master Place, Sala 903",
+    "addressLocality": "Vitória",
+    "addressRegion": "ES",
+    "postalCode": "29056-220",
+    "addressCountry": "BR"
+  },
+  "telephone": "+5527997755884",
+  "email": "ocontadormei@gmail.com",
+  "areaServed": "BR",
+  "priceRange": "$$",
+  "sameAs": [
+    "https://instagram.com/meicontador"
+  ]
+}
+</script>
+
+<!-- Schema.org - FAQ Page -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quanto custa abrir um MEI?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A abertura do MEI em si é gratuita junto ao governo. Nossa consultoria cuida de todo o processo, orientação de enquadramento e primeiros passos — fale com a gente para saber o valor do serviço para o seu caso."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quanto tempo demora?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Na maioria dos casos, a abertura do CNPJ MEI sai em poucos dias úteis. Regularizações e parcelamentos podem levar um pouco mais, dependendo da situação junto à Receita Federal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso regularizar meu CNPJ mesmo com pendências antigas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim. Analisamos débitos, declarações em atraso e dívida ativa, e montamos um plano para colocar sua empresa em dia, incluindo parcelamentos quando fizer sentido."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vocês fazem Imposto de Renda pessoa física?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sim, cuidamos da sua declaração de Imposto de Renda com revisão cuidadosa das deduções disponíveis, para você não pagar mais do que o devido."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como funciona o atendimento?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Todo o atendimento é digital: você envia documentos pelo WhatsApp ou e-mail, acompanha o andamento e tira dúvidas diretamente com o contador responsável — sem precisar ir até um escritório."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="container nav-inner">
+    <a href="#home" class="brand">
+      <img src="assets/logo-icon.png" alt="MEICONTADOR" width="400" height="283" decoding="async">
+      <span class="brand-word">MEI<span>CONTADOR</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#servicos">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="#contato" class="btn btn-ghost">Falar com um contador</a>
+      <a href="https://wa.me/5527997755884" target="_blank" rel="noopener" class="btn btn-primary" data-whatsapp-message="Olá! Vim pelo site do MEICONTADOR e gostaria de falar com um contador.">WhatsApp</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks"><span class="hamburger"><i></i><i></i><i></i></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="eyebrow">Contabilidade para MEI &amp; pequenas empresas</div>
+      <h1>Contabilidade inteligente para quem quer <span class="gold-text">crescer.</span></h1>
+      <p class="lead">Especialistas em MEI, Imposto de Renda e regularização empresarial. Processos digitais, atendimento humanizado e clareza fiscal do primeiro contato à declaração entregue.</p>
+      <div class="hero-actions">
+        <a href="https://wa.me/5527997755884" target="_blank" rel="noopener" class="btn btn-primary" data-whatsapp-message="Olá! Quero abrir meu MEI com orientação do MEICONTADOR. Pode me ajudar?">Abrir meu MEI</a>
+        <a href="https://wa.me/5527997755884" target="_blank" rel="noopener" class="btn btn-ghost" data-whatsapp-message="Olá! Vim pelo site do MEICONTADOR e quero entender qual serviço contábil faz sentido para o meu caso.">Falar no WhatsApp</a>
+      </div>
+      <div class="hero-trust">
+        <div><strong>MEI</strong><span>abertura e rotina fiscal</span></div>
+        <div><strong>IRPF</strong><span>declaração pessoa física</span></div>
+        <div><strong>ES</strong><span>base em Vitória</span></div>
+        <div><strong>Online</strong><span>atendimento por WhatsApp</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 480 480" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="gGrad" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#9B6C14"/>
+            <stop offset="50%" stop-color="#C89B3C"/>
+            <stop offset="100%" stop-color="#E8CB7A"/>
+          </linearGradient>
+        </defs>
+        <circle cx="240" cy="240" r="190" stroke="url(#gGrad)" stroke-opacity="0.18" stroke-width="1"/>
+        <circle cx="240" cy="240" r="140" stroke="url(#gGrad)" stroke-opacity="0.28" stroke-width="1"/>
+        <g id="orbitGroup">
+          <circle cx="240" cy="50" r="5" fill="url(#gGrad)"/>
+          <circle cx="430" cy="240" r="4" fill="url(#gGrad)" fill-opacity="0.7"/>
+          <circle cx="240" cy="430" r="3.5" fill="url(#gGrad)" fill-opacity="0.5"/>
+        </g>
+        <polyline points="90,320 150,270 195,300 260,190 320,225 400,120" stroke="url(#gGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <g fill="url(#gGrad)">
+          <circle cx="90" cy="320" r="4"/>
+          <circle cx="150" cy="270" r="4"/>
+          <circle cx="195" cy="300" r="4"/>
+          <circle cx="260" cy="190" r="4"/>
+          <circle cx="320" cy="225" r="4"/>
+          <circle cx="400" cy="120" r="5"/>
+        </g>
+        <text x="400" y="105" text-anchor="middle" font-family="Manrope" font-weight="800" font-size="12" fill="#E8CB7A">+18%</text>
+        <rect x="60" y="70" width="120" height="52" rx="10" fill="#151515" stroke="rgba(255,255,255,.08)"/>
+        <text x="80" y="92" font-family="Inter" font-size="9" fill="#8A8A8A">DAS emitido</text>
+        <text x="80" y="110" font-family="Manrope" font-weight="800" font-size="14" fill="#F5F5F5">✓ em dia</text>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="reveal"><div class="stat-num">MEI</div><div class="stat-label">Abertura, DAS e DASN-SIMEI</div></div>
+    <div class="reveal reveal-delay-1"><div class="stat-num">CNPJ</div><div class="stat-label">Regularização e parcelamentos</div></div>
+    <div class="reveal reveal-delay-2"><div class="stat-num">IRPF</div><div class="stat-label">Declaração pessoa física</div></div>
+    <div class="reveal reveal-delay-3"><div class="stat-num">Online</div><div class="stat-label">Atendimento claro pelo WhatsApp</div></div>
+  </div>
+</section>
+
+<!-- ================= SERVIÇOS ================= -->
+<section class="services" id="servicos">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Serviços</div>
+      <h2>Tudo o que sua empresa precisa, em um só lugar.</h2>
+      <p>Do primeiro CNPJ à consultoria estratégica — cuidamos da parte fiscal para você focar no negócio.</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card reveal">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg></div>
+        <h3>Abertura de MEI</h3>
+        <p>Formalização completa do seu CNPJ, do zero, em poucos dias.</p>
+        <a class="service-cta" href="https://wa.me/5527997755884" target="_blank" rel="noopener" data-whatsapp-message="Olá! Quero abrir meu MEI e gostaria de orientação para fazer tudo corretamente.">Abrir MEI pelo WhatsApp</a>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 4v16M4 9h16"/></svg></div>
+        <h3>Regularização de CNPJ</h3>
+        <p>Colocamos sua empresa em dia com o Fisco, sem dor de cabeça.</p>
+        <a class="service-cta" href="https://wa.me/5527997755884" target="_blank" rel="noopener" data-whatsapp-message="Olá! Preciso regularizar meu CNPJ/MEI e quero entender minhas pendências.">Regularizar meu CNPJ</a>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-6"/></svg></div>
+        <h3>Alteração cadastral</h3>
+        <p>Mudança de atividade, endereço ou dados sempre que precisar.</p>
+        <a class="service-cta" href="https://wa.me/5527997755884" target="_blank" rel="noopener" data-whatsapp-message="Olá! Preciso fazer uma alteração cadastral no meu MEI/CNPJ.">Alterar meus dados</a>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6L6 18M6 6l12 12"/></svg></div>
+        <h3>Baixa de MEI</h3>
+        <p>Encerramento correto do CNPJ, sem deixar pendências futuras.</p>
+        <a class="service-cta" href="https://wa.me/5527997755884" target="_blank" rel="noopener" data-whatsapp-message="Olá! Quero dar baixa no meu MEI e evitar pendências futuras.">Dar baixa no MEI</a>
+      </div>
+      <div class="service-card reveal">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+        <h3>Declaração anual</h3>
+        <p>DASN-SIMEI preparada com atenção aos prazos e às informações obrigatórias.</p>
+        <a class="service-cta" href="https://wa.me/5527997755884" target="_blank" rel="noopener" data-whatsapp-message="Olá! Preciso fazer minha Declaração Anual do MEI (DASN-SIMEI).">Fazer declaração anual</a>
+      </div>
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M3 6h18M3 18h18"/></svg></div>
+        <h3>Emissão de DAS</h3>
+        <p>Guias mensais calculadas e enviadas certinho, todo mês.</p>
+        <a class="service-cta" href="https://wa.me/5527997755884" target="_blank" rel="noopener" data-whatsapp-message="Olá! Quero ajuda para organizar ou emitir meu DAS mensal do MEI.">Organizar meu DAS</a>
+      </div>
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+        <h3>Parcelamentos</h3>
+        <p>Negociação de débitos com a Receita em condições viáveis.</p>
+        <a class="service-cta" href="https://wa.me/5527997755884" target="_blank" rel="noopener" data-whatsapp-message="Olá! Tenho débitos no MEI/CNPJ e quero avaliar parcelamento ou regularização.">Avaliar parcelamento</a>
+      </div>
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div>
+        <h3>Imposto de Renda PF</h3>
+        <p>Declaração pessoa física com revisão para pagar só o justo.</p>
+        <a class="service-cta" href="https://wa.me/5527997755884" target="_blank" rel="noopener" data-whatsapp-message="Olá! Quero ajuda com minha declaração de Imposto de Renda Pessoa Física.">Fazer meu IRPF</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DIFERENCIAIS ================= -->
+<section class="diferenciais">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Diferenciais</div>
+      <h2>Por que escolher o MEICONTADOR?</h2>
+    </div>
+
+    <div class="dif-grid reveal">
+      <div class="dif-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/></svg>
+        <div><h4>Especialização em MEI</h4><p>Foco total no universo do microempreendedor.</p></div>
+      </div>
+      <div class="dif-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21a8 8 0 10-16 0"/><circle cx="12" cy="7" r="4"/></svg>
+        <div><h4>Atendimento humanizado</h4><p>Você fala direto com quem entende do seu caso.</p></div>
+      </div>
+      <div class="dif-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18"/></svg>
+        <div><h4>Processos 100% digitais</h4><p>Envie documentos e acompanhe tudo pelo celular.</p></div>
+      </div>
+      <div class="dif-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        <div><h4>Rapidez</h4><p>Respostas ágeis, sem enrolação nos prazos.</p></div>
+      </div>
+      <div class="dif-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+        <div><h4>Preço justo</h4><p>Transparência total, sem taxas escondidas.</p></div>
+      </div>
+      <div class="dif-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        <div><h4>Suporte pelo WhatsApp</h4><p>Canal direto, sem burocracia para tirar dúvidas.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="timeline" id="como-funciona">
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <div class="eyebrow" style="justify-content:center;">Processo</div>
+      <h2>Como funciona</h2>
+      <p>Do primeiro contato à resolução, um caminho simples e sem burocracia.</p>
+    </div>
+
+    <div class="timeline-track">
+      <div class="tl-step reveal"><div class="tl-num">1</div><h4>Entre em contato</h4><p>Fale com a gente pelo WhatsApp ou pelo formulário do site.</p></div>
+      <div class="tl-step reveal reveal-delay-1"><div class="tl-num">2</div><h4>Envie seus documentos</h4><p>Reunimos tudo digitalmente, sem precisar sair de casa.</p></div>
+      <div class="tl-step reveal reveal-delay-2"><div class="tl-num">3</div><h4>Analisamos tudo</h4><p>Verificamos sua situação fiscal com atenção aos detalhes.</p></div>
+      <div class="tl-step reveal reveal-delay-3"><div class="tl-num">4</div><h4>Problema resolvido</h4><p>Você recebe tudo pronto, explicado em linguagem simples.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BENEFÍCIOS ================= -->
+<section class="beneficios">
+  <div class="container ben-grid">
+    <div class="reveal">
+      <div class="eyebrow">Benefícios</div>
+      <h2 style="font-size:clamp(26px,3.2vw,38px); margin-bottom:30px;">Deixe a burocracia conosco.</h2>
+      <ul class="ben-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><p>Mais tempo para focar no seu negócio</p></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><p>Planejamento fiscal dentro da lei, quando aplicável</p></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><p>Segurança fiscal em cada obrigação</p></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><p>Atendimento especializado, do início ao fim</p></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg><p>Sem complicação, tudo explicado com clareza</p></li>
+      </ul>
+    </div>
+    <div class="ben-panel reveal reveal-delay-1">
+      <blockquote>"Contabilidade não deveria ser um obstáculo para quem empreende — deveria ser a base que sustenta o crescimento."</blockquote>
+      <cite>Hendrik Brandemburg — Fundador, MEICONTADOR</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SOBRE ================= -->
+<section class="sobre" id="sobre">
+  <div class="container sobre-grid">
+    <div class="reveal">
+      <div class="sobre-portrait">
+        <img src="assets/hendrik-foto.jpg" alt="Hendrik Brandemburg, contador e fundador do MEICONTADOR" class="sobre-photo" width="614" height="768" loading="lazy" decoding="async">
+        <div class="sobre-badge">
+          <strong>Hendrik Brandemburg</strong>
+          <span>Contador · Fundador do MEICONTADOR</span>
+        </div>
+      </div>
+
+    </div>
+    <div class="sobre-copy reveal reveal-delay-1">
+      <div class="eyebrow">Sobre</div>
+      <h2 style="font-size:clamp(26px,3.2vw,38px); margin-bottom:8px;">Quem cuida da sua contabilidade</h2>
+      <div class="sobre-tags">
+        <span>Especialista em MEI</span>
+        <span>Especialista em eSocial</span>
+        <span>Especialista em SST</span>
+        <span>Pequenas Empresas</span>
+      </div>
+      <p>Contador atuante em Vitória/ES, com foco em Simples Nacional e MEI. Acompanho de perto microempreendedores e pequenas empresas de diferentes setores — engenharia, serviços portuários, locação de equipamentos, comércio — sempre com atenção aos detalhes que fazem diferença no bolso do cliente.</p>
+      <p>Acredito em contabilidade como ferramenta de crescimento, não como obstáculo. Por isso, cada orientação é traduzida em linguagem simples, sem jargões desnecessários — e cada obrigação fiscal é tratada com o rigor técnico que ela exige.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= DEPOIMENTOS ================= -->
+<section class="depoimentos" id="depoimentos">
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <div class="eyebrow" style="justify-content:center;">Depoimentos</div>
+      <h2>Quem confia, recomenda.</h2>
+    </div>
+
+    <div class="dep-grid">
+      <div class="dep-card reveal">
+        <div class="dep-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3-5.6-3.4-5.6 3.4 1.4-6.3L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3-5.6-3.4-5.6 3.4 1.4-6.3L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3-5.6-3.4-5.6 3.4 1.4-6.3L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3-5.6-3.4-5.6 3.4 1.4-6.3L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3-5.6-3.4-5.6 3.4 1.4-6.3L1 7.5l6.4-.6z"/></svg>
+        </div>
+        <p>"Profissional sério e competente, atendimento além do combinado."</p>
+        <div class="dep-person">
+          <div class="dep-avatar">JS</div>
+          <div><strong>Jeferson Souza</strong><span>PJ Engenharia e Elétrica — Serra/ES</span></div>
+        </div>
+      </div>
+
+      <div class="dep-card reveal reveal-delay-1">
+        <div class="dep-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3-5.6-3.4-5.6 3.4 1.4-6.3L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3-5.6-3.4-5.6 3.4 1.4-6.3L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3-5.6-3.4-5.6 3.4 1.4-6.3L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3-5.6-3.4-5.6 3.4 1.4-6.3L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3-5.6-3.4-5.6 3.4 1.4-6.3L1 7.5l6.4-.6z"/></svg>
+        </div>
+        <p>"Atendimento fantástico, com o cuidado e a atenção que o cliente precisa."</p>
+        <div class="dep-person">
+          <div class="dep-avatar">EZ</div>
+          <div><strong>Ezequiel</strong><span>Primevix Locações — Vitória/ES</span></div>
+        </div>
+      </div>
+
+      <div class="dep-card reveal reveal-delay-2">
+        <div class="dep-stars">
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3-5.6-3.4-5.6 3.4 1.4-6.3L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3-5.6-3.4-5.6 3.4 1.4-6.3L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3-5.6-3.4-5.6 3.4 1.4-6.3L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3-5.6-3.4-5.6 3.4 1.4-6.3L1 7.5l6.4-.6z"/></svg>
+          <svg viewBox="0 0 20 20"><path d="M10 1l2.6 5.9 6.4.6-4.8 4.3 1.4 6.3-5.6-3.4-5.6 3.4 1.4-6.3L1 7.5l6.4-.6z"/></svg>
+        </div>
+        <p>"Me impressionei com o grau de conhecimento na área que minha empresa atua, e com a atenção dada."</p>
+        <div class="dep-person">
+          <div class="dep-avatar">EV</div>
+          <div><strong>Eivide</strong><span>EOS Serviços Portuários — Vila Velha/ES</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+      <div class="eyebrow" style="justify-content:center;">Dúvidas frequentes</div>
+      <h2>Perguntas frequentes</h2>
+    </div>
+
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-answer-1"><span>Quanto custa abrir um MEI?</span><span class="plus"></span></button>
+        <div class="faq-answer" id="faq-answer-1"><p>A abertura do MEI em si é gratuita junto ao governo. Nossa consultoria cuida de todo o processo, orientação de enquadramento e primeiros passos — fale com a gente para saber o valor do serviço para o seu caso.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-answer-2"><span>Quanto tempo demora?</span><span class="plus"></span></button>
+        <div class="faq-answer" id="faq-answer-2"><p>Na maioria dos casos, a abertura do CNPJ MEI sai em poucos dias úteis. Regularizações e parcelamentos podem levar um pouco mais, dependendo da situação junto à Receita Federal.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-answer-3"><span>Posso regularizar meu CNPJ mesmo com pendências antigas?</span><span class="plus"></span></button>
+        <div class="faq-answer" id="faq-answer-3"><p>Sim. Analisamos débitos, declarações em atraso e dívida ativa, e montamos um plano para colocar sua empresa em dia, incluindo parcelamentos quando fizer sentido.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-answer-4"><span>Vocês fazem Imposto de Renda pessoa física?</span><span class="plus"></span></button>
+        <div class="faq-answer" id="faq-answer-4"><p>Sim, cuidamos da sua declaração de Imposto de Renda com revisão cuidadosa das deduções disponíveis, para você não pagar mais do que o devido.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false" aria-controls="faq-answer-5"><span>Como funciona o atendimento?</span><span class="plus"></span></button>
+        <div class="faq-answer" id="faq-answer-5"><p>Todo o atendimento é digital: você envia documentos pelo WhatsApp ou e-mail, acompanha o andamento e tira dúvidas diretamente com o contador responsável — sem precisar ir até um escritório.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="cta-final">
+  <div class="container reveal">
+    <h2>Vamos resolver sua contabilidade?</h2>
+    <p>Fale agora com quem entende de MEI e pequenas empresas.</p>
+    <a href="https://wa.me/5527997755884" target="_blank" rel="noopener" class="btn btn-primary" data-whatsapp-message="Olá! Quero resolver minha contabilidade com o MEICONTADOR. Podemos conversar?">Falar no WhatsApp</a>
+  </div>
+</section>
+
+<!-- ================= CONTATO ================= -->
+<section class="contato" id="contato">
+  <div class="container contato-grid">
+    <div class="reveal">
+      <div class="eyebrow">Contato</div>
+      <h2 style="font-size:clamp(26px,3.2vw,36px); margin-bottom:30px;">Solicite atendimento</h2>
+
+      <div class="contato-info-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        <div><strong>WhatsApp</strong><a href="https://wa.me/5527997755884" target="_blank" rel="noopener" data-whatsapp-message="Olá! Vim pela área de contato do site do MEICONTADOR.">(27) 99775-5884</a></div>
+      </div>
+      <div class="contato-info-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+        <div><strong>E-mail</strong><a href="mailto:ocontadormei@gmail.com">ocontadormei@gmail.com</a></div>
+      </div>
+      <div class="contato-info-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><strong>Endereço</strong><span>Rua Capitão Domingos Correia da Rocha, 80 — Ed. Master Place, Sala 903, Vitória/ES — CEP 29.056-220</span></div>
+      </div>
+      <div class="contato-info-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        <div><strong>Instagram</strong><a href="https://instagram.com/meicontador" target="_blank" rel="noopener">@meicontador</a></div>
+      </div>
+    </div>
+
+    <form class="reveal reveal-delay-1" id="contactForm">
+      <div class="form-grid">
+        <div class="field"><label for="fname">Nome</label><input type="text" id="fname" required placeholder="Seu nome completo"></div>
+        <div class="field"><label for="fphone">WhatsApp</label><input type="tel" id="fphone" required placeholder="(27) 90000-0000"></div>
+        <div class="field full"><label for="femail">E-mail</label><input type="email" id="femail" required placeholder="seuemail@exemplo.com"></div>
+        <div class="field full"><label for="fservico">Serviço desejado</label>
+          <select id="fservico">
+            <option>Abertura de MEI</option>
+            <option>Regularização de CNPJ</option>
+            <option>Declaração Anual MEI</option>
+            <option>Imposto de Renda Pessoa Física</option>
+            <option>Consultoria Tributária</option>
+            <option>Contabilidade para Pequenas Empresas</option>
+            <option>Outro assunto</option>
+          </select>
+        </div>
+        <div class="field full"><label for="fmsg">Mensagem</label><textarea id="fmsg" placeholder="Conte um pouco sobre o que você precisa"></textarea></div>
+      </div>
+      <div class="form-note" style="margin-top:18px; padding:12px; background:rgba(200,155,60,.08); border-left:3px solid var(--gold); border-radius:4px;">
+        <strong style="font-size:13px;">Privacidade:</strong> Seus dados (nome, e-mail, telefone) serão usados apenas para contato profissional via WhatsApp/e-mail. Leia nossa <a href="privacidade.html" style="color:var(--gold); text-decoration:underline;">Política de Privacidade</a>.
+      </div>
+      <button type="submit" class="btn btn-primary btn-block" style="margin-top:22px;">Solicitar atendimento</button>
+      <p class="form-note">Ao enviar, você será direcionado ao WhatsApp com sua mensagem já preenchida para agilizar o atendimento.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo-full-light.png" alt="MEICONTADOR — Descomplicando sua vida" width="900" height="849" loading="lazy" decoding="async">
+        <p>Contabilidade especializada para MEI e pequenas empresas, com atendimento 100% online em todo o Brasil.</p>
+        <div class="footer-social">
+          <a href="https://instagram.com/meicontador" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+          <a href="https://wa.me/5527997755884" target="_blank" rel="noopener" aria-label="WhatsApp" data-whatsapp-message="Olá! Vim pelo rodapé do site do MEICONTADOR."><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></a>
+          <a href="mailto:ocontadormei@gmail.com" aria-label="E-mail"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Links rápidos</h5>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Serviços</h5>
+        <ul>
+          <li><a href="#servicos">Abertura de MEI</a></li>
+          <li><a href="#servicos">Declaração anual</a></li>
+          <li><a href="#servicos">Imposto de Renda</a></li>
+          <li><a href="#servicos">Regularização</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contato</h5>
+        <ul>
+          <li><span>Vitória — ES</span></li>
+          <li><a href="mailto:ocontadormei@gmail.com">ocontadormei@gmail.com</a></li>
+          <li><a href="https://wa.me/5527997755884" data-whatsapp-message="Olá! Vim pelo rodapé do site do MEICONTADOR.">(27) 99775-5884</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> MEICONTADOR. Todos os direitos reservados.</span>
+      <a href="privacidade.html">Política de Privacidade</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp floating -->
+<a class="wa-float" href="https://wa.me/5527997755884" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" data-whatsapp-message="Olá! Vim pelo site do MEICONTADOR e quero atendimento pelo WhatsApp.">
+  <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.79.47 3.48 1.29 4.94L2 22l5.28-1.38a9.87 9.87 0 004.76 1.21h.01c5.46 0 9.9-4.45 9.9-9.91S17.5 2 12.04 2zm5.8 14.16c-.24.68-1.4 1.3-1.93 1.35-.5.06-1.02.27-3.4-.71-2.9-1.2-4.77-4.15-4.92-4.34-.14-.2-1.18-1.57-1.18-3 0-1.42.75-2.12 1.01-2.41.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.65.5.24.58.82 2 .9 2.14.07.15.12.32.02.52-.1.2-.15.32-.3.5-.15.17-.31.39-.44.52-.15.15-.31.31-.13.61.17.3.77 1.27 1.65 2.06 1.14 1.02 2.1 1.33 2.4 1.48.3.15.48.13.65-.08.18-.2.75-.87.95-1.17.2-.3.4-.25.68-.15.28.1 1.77.84 2.08 1 .3.15.5.23.58.36.08.13.08.75-.16 1.43z"/></svg>
+</a>
+
+<!-- Cookie banner -->
+<div class="cookie-bar" id="cookieBar">
+  <p>Usamos apenas um cookie/local storage essencial para lembrar que você aceitou este aviso.</p>
+  <button class="btn btn-primary" id="cookieAccept">Entendi</button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>

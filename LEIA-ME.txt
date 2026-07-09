@@ -1,0 +1,31 @@
+MEICONTADOR - site estatico
+===========================
+
+Este pacote contem a landing page estatica do MEICONTADOR.
+
+Arquivos principais:
+- index.html: pagina principal
+- privacidade.html: politica de privacidade
+- robots.txt: instrucoes para mecanismos de busca
+- sitemap.xml: mapa do site
+- vercel.json: configuracao de deploy na Vercel
+- css/style.css: estilos
+- js/main.js: interacoes, WhatsApp, menu, FAQ e cookies
+- assets/: imagens e logos
+
+Publicacao recomendada:
+1. Subir este repositorio para GitHub.
+2. Importar o repositorio na Vercel.
+3. Usar framework "Other".
+4. Deixar Build Command e Install Command vazios.
+5. Usar Output Directory como ".".
+
+Dominio inicial esperado:
+https://meicontador-site.vercel.app
+
+Antes de divulgar:
+- testar todos os botoes de WhatsApp;
+- revisar politica de privacidade;
+- confirmar telefone, email e endereco;
+- confirmar autorizacao dos depoimentos;
+- atualizar sitemap/robots/canonical se houver dominio proprio.

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meicontador-site.vercel.app/sitemap.xml
+# Trocar pelo domínio próprio quando houver.
