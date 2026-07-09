@@ -3,6 +3,7 @@
 
 # Vercel local state
 .vercel/
+.env*
 
 # OS/editor noise
 .DS_Store
