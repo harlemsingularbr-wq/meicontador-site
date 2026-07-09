@@ -1,5 +1,6 @@
 # Generated packages
 *.zip
+WhatsApp Image *.jpeg
 
 # Vercel local state
 .vercel/
