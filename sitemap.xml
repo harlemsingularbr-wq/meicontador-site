@@ -7,9 +7,15 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://meicontador-site.vercel.app/privacidade.html</loc>
+    <loc>https://meicontador-site.vercel.app/privacidade</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://meicontador-site.vercel.app/formulario-abertura-mei</loc>
+    <lastmod>2026-07-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

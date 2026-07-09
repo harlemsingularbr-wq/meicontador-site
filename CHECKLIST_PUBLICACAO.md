@@ -36,6 +36,8 @@ https://meicontador-site.vercel.app
 - [ ] Testar CTAs dos cards de serviço.
 - [ ] Testar formulário e conferir mensagem gerada no WhatsApp.
 - [ ] Abrir `/privacidade`.
+- [ ] Abrir `/formulario-abertura-mei`.
+- [ ] Preencher o pré-formulário de abertura de MEI e confirmar que o WhatsApp abre com resumo sem CPF/endereço completo.
 - [ ] Abrir `/robots.txt`.
 - [ ] Abrir `/sitemap.xml`.
 
@@ -54,6 +56,7 @@ https://meicontador-site.vercel.app
 Atualizar:
 
 - [ ] `index.html`: canonical, `og:url`, `og:image`, Schema.org.
+- [ ] `formulario-abertura-mei.html`: canonical.
 - [ ] `privacidade.html`: canonical.
 - [ ] `robots.txt`: URL do sitemap.
 - [ ] `sitemap.xml`: URLs das páginas.

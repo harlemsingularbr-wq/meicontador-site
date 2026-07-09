@@ -5,6 +5,7 @@ Este pacote contem a landing page estatica do MEICONTADOR.
 
 Arquivos principais:
 - index.html: pagina principal
+- formulario-abertura-mei.html: pre-formulario de abertura de MEI
 - privacidade.html: politica de privacidade
 - robots.txt: instrucoes para mecanismos de busca
 - sitemap.xml: mapa do site
@@ -23,8 +24,14 @@ Publicacao recomendada:
 Dominio inicial esperado:
 https://meicontador-site.vercel.app
 
+Rotas publicas principais na Vercel:
+- /
+- /formulario-abertura-mei
+- /privacidade
+
 Antes de divulgar:
 - testar todos os botoes de WhatsApp;
+- testar o pre-formulario de abertura de MEI;
 - revisar politica de privacidade;
 - confirmar telefone, email e endereco;
 - confirmar autorizacao dos depoimentos;

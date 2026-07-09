@@ -18,6 +18,8 @@ O pacote gerado anteriormente pelo Claude foi revisado e corrigido. A versão at
 - Claims comerciais fortes removidos ou suavizados.
 - `robots.txt` e `sitemap.xml` atualizados para o domínio inicial da Vercel.
 - Vercel Web Analytics ativado e integrado via script estático.
+- Pré-formulário de abertura de MEI integrado ao site, com envio de resumo pelo WhatsApp.
+- Dados sensíveis como CPF, data de nascimento, endereço completo e documentos não são enviados automaticamente pela URL.
 - `@import` de fontes removido do CSS; fontes carregadas pelo `head`.
 - Logos com `width`, `height` e `decoding` quando aplicável.
 - Repositório preparado com `.gitignore`, `README.md` e `vercel.json`.

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulário de Abertura de MEI | MEICONTADOR</title>
+<meta name="description" content="Pré-formulário para abertura de MEI com atendimento do MEICONTADOR. Informe sua atividade e receba orientação pelo WhatsApp.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://meicontador-site.vercel.app/formulario-abertura-mei">
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="dns-prefetch" href="//wa.me">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+
+<style>
+.mei-form-page{
+  min-height:100vh;
+  padding:138px 0 86px;
+  background:
+    radial-gradient(ellipse 760px 420px at 82% 8%, rgba(200,155,60,.12), transparent 62%),
+    radial-gradient(ellipse 620px 400px at 8% 92%, rgba(155,108,20,.10), transparent 62%),
+    var(--black);
+}
+.mei-form-head{ max-width:760px; margin-bottom:42px; }
+.mei-form-head h1{ font-size:clamp(32px,4.8vw,56px); margin-bottom:18px; }
+.mei-form-head p{ color:var(--gray-mid); font-size:17px; max-width:680px; }
+.mei-form-wrap{
+  display:grid;
+  grid-template-columns:.78fr 1.22fr;
+  gap:36px;
+  align-items:start;
+}
+.mei-form-aside{
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:16px;
+  background:linear-gradient(160deg, rgba(28,28,28,.96), rgba(11,11,11,.98));
+  padding:28px;
+  position:sticky;
+  top:104px;
+}
+.mei-form-aside h2{ font-size:20px; margin-bottom:14px; }
+.mei-form-aside p{ color:var(--gray-mid); font-size:14px; margin-bottom:18px; }
+.mei-form-steps{ display:grid; gap:14px; margin-top:24px; }
+.mei-form-step{ display:flex; gap:12px; align-items:flex-start; }
+.mei-form-step span{
+  width:28px; height:28px; border-radius:50%;
+  display:inline-flex; align-items:center; justify-content:center;
+  background:var(--gold-gradient);
+  color:var(--black);
+  font-weight:800;
+  flex-shrink:0;
+}
+.mei-form-step strong{ display:block; font-size:14px; color:var(--white); margin-bottom:2px; }
+.mei-form-step small{ display:block; color:var(--gray-mid); line-height:1.5; }
+.mei-form-alert{
+  margin-top:24px;
+  padding:14px;
+  border-radius:10px;
+  border:1px solid rgba(200,155,60,.24);
+  background:rgba(200,155,60,.08);
+  color:var(--gray-light);
+  font-size:13px;
+  line-height:1.6;
+}
+.mei-form-card{
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:16px;
+  background:var(--black-card);
+  padding:34px;
+}
+.mei-section{ padding-top:28px; margin-top:28px; border-top:1px solid rgba(255,255,255,.08); }
+.mei-section:first-child{ padding-top:0; margin-top:0; border-top:0; }
+.mei-section-title{ color:var(--gold); font-size:15px; text-transform:uppercase; margin-bottom:18px; }
+.mei-grid{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.mei-field.full{ grid-column:1/-1; }
+.mei-field label{ display:block; color:var(--gray-light); font-size:13px; font-weight:600; margin-bottom:8px; }
+.mei-field input,
+.mei-field textarea,
+.mei-field select{
+  width:100%;
+  background:var(--black);
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:10px;
+  color:var(--white);
+  padding:14px 16px;
+  font-size:14.5px;
+}
+.mei-field textarea{ min-height:104px; resize:vertical; }
+.mei-field input:focus,
+.mei-field textarea:focus,
+.mei-field select:focus{ border-color:var(--gold); }
+.mei-checks{ display:grid; gap:12px; }
+.mei-check{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  color:var(--gray-light);
+  font-size:14px;
+  line-height:1.5;
+}
+.mei-check input{ margin-top:3px; width:18px; height:18px; accent-color:var(--gold); flex-shrink:0; }
+.mei-help{ color:var(--gray-mid); font-size:13px; line-height:1.6; margin-bottom:16px; }
+.mei-actions{
+  display:flex;
+  gap:14px;
+  margin-top:34px;
+  padding-top:28px;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+.mei-actions .btn{ flex:1; }
+.mei-privacy{
+  margin-top:18px;
+  color:var(--gray-mid);
+  font-size:12.5px;
+  line-height:1.6;
+}
+.mei-privacy a{ color:var(--gold-bright); text-decoration:underline; }
+@media (max-width: 900px){
+  .mei-form-wrap{ grid-template-columns:1fr; }
+  .mei-form-aside{ position:static; }
+}
+@media (max-width: 620px){
+  .mei-form-page{ padding:112px 0 54px; }
+  .mei-form-card, .mei-form-aside{ padding:22px; }
+  .mei-grid{ grid-template-columns:1fr; }
+  .mei-field.full{ grid-column:auto; }
+  .mei-actions{ flex-direction:column; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container nav-inner">
+    <a href="/#home" class="brand">
+      <img src="assets/logo-icon.png" alt="MEICONTADOR" width="400" height="283" decoding="async">
+      <span class="brand-word">MEI<span>CONTADOR</span></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="/#servicos">Serviços</a>
+      <a href="/#sobre">Sobre</a>
+      <a href="/#como-funciona">Como funciona</a>
+      <a href="/#depoimentos">Depoimentos</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/#contato">Contato</a>
+    </nav>
+
+    <div class="nav-cta">
+      <a href="/#contato" class="btn btn-ghost">Falar com um contador</a>
+      <a href="https://wa.me/5527997755884" target="_blank" rel="noopener" class="btn btn-primary" data-whatsapp-message="Olá! Vim pelo formulário de abertura de MEI e gostaria de falar com um contador.">WhatsApp</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks"><span class="hamburger"><i></i><i></i><i></i></span></button>
+    </div>
+  </div>
+</header>
+
+<main class="mei-form-page">
+  <div class="container">
+    <div class="mei-form-head">
+      <div class="eyebrow">Abertura de MEI</div>
+      <h1>Comece seu MEI com orientação contábil desde o primeiro passo.</h1>
+      <p>Preencha este pré-formulário para o Hendrik entender sua atividade e iniciar o atendimento pelo WhatsApp com mais contexto.</p>
+    </div>
+
+    <div class="mei-form-wrap">
+      <aside class="mei-form-aside">
+        <h2>Como funciona</h2>
+        <p>O formulário não cria o MEI automaticamente. Ele organiza as informações iniciais para o contador avaliar enquadramento, atividade e próximos documentos.</p>
+        <div class="mei-form-steps">
+          <div class="mei-form-step">
+            <span>1</span>
+            <div><strong>Você informa sua atividade</strong><small>Dados básicos de contato e o que pretende fazer como MEI.</small></div>
+          </div>
+          <div class="mei-form-step">
+            <span>2</span>
+            <div><strong>O WhatsApp abre com um resumo</strong><small>O atendimento já começa com contexto, sem precisar repetir tudo.</small></div>
+          </div>
+          <div class="mei-form-step">
+            <span>3</span>
+            <div><strong>Documentos são enviados com orientação</strong><small>Dados sensíveis e documentos devem ser enviados apenas após orientação do contador.</small></div>
+          </div>
+        </div>
+        <div class="mei-form-alert">
+          Por segurança, este site estático não envia CPF, data de nascimento, endereço completo ou documentos por URL. Esses dados devem ser tratados no atendimento direto.
+        </div>
+      </aside>
+
+      <form class="mei-form-card" id="meiForm">
+        <section class="mei-section">
+          <h2 class="mei-section-title">1. Dados de contato</h2>
+          <div class="mei-grid">
+            <div class="mei-field full">
+              <label for="nome">Nome completo *</label>
+              <input type="text" id="nome" name="nome" autocomplete="name" required>
+            </div>
+            <div class="mei-field">
+              <label for="telefone">WhatsApp *</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(27) 99999-9999" autocomplete="tel" required>
+            </div>
+            <div class="mei-field">
+              <label for="email">E-mail *</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="mei-field">
+              <label for="cidade">Cidade/UF *</label>
+              <input type="text" id="cidade" name="cidade" placeholder="Vitória/ES" autocomplete="address-level2" required>
+            </div>
+            <div class="mei-field">
+              <label for="atendimento">Melhor horário para atendimento</label>
+              <select id="atendimento" name="atendimento">
+                <option>Manhã</option>
+                <option>Tarde</option>
+                <option>Noite</option>
+                <option>Qualquer horário comercial</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section class="mei-section">
+          <h2 class="mei-section-title">2. Atividade do MEI</h2>
+          <div class="mei-grid">
+            <div class="mei-field full">
+              <label for="atividade">Ramo de atividade / profissão *</label>
+              <input type="text" id="atividade" name="atividade" placeholder="Ex.: eletricista, consultor, vendedor, prestador de serviço" required>
+            </div>
+            <div class="mei-field full">
+              <label for="descricao">Descreva o que você faz ou pretende fazer *</label>
+              <textarea id="descricao" name="descricao" placeholder="Conte com suas palavras quais serviços ou produtos você oferece." required></textarea>
+            </div>
+            <div class="mei-field">
+              <label for="faturamento">Faturamento estimado por mês</label>
+              <input type="text" id="faturamento" name="faturamento" placeholder="Ex.: R$ 3.000,00">
+            </div>
+            <div class="mei-field">
+              <label for="local">Local de funcionamento</label>
+              <select id="local" name="local">
+                <option>Casa / home office</option>
+                <option>Loja / sala comercial</option>
+                <option>Atendimento externo</option>
+                <option>Internet / delivery</option>
+                <option>Ainda não sei</option>
+              </select>
+            </div>
+            <div class="mei-field full">
+              <label for="observacoes">Observações importantes</label>
+              <textarea id="observacoes" name="observacoes" placeholder="Ex.: já tenho CNPJ, tenho débitos, quero emitir nota, preciso regularizar cadastro."></textarea>
+            </div>
+          </div>
+        </section>
+
+        <section class="mei-section">
+          <h2 class="mei-section-title">3. Documentos que você já tem</h2>
+          <p class="mei-help">Marque apenas o que você já possui. O envio dos arquivos deve ser combinado diretamente no WhatsApp.</p>
+          <div class="mei-checks">
+            <label class="mei-check"><input type="checkbox" name="docs" value="RG ou CNH"> RG ou CNH</label>
+            <label class="mei-check"><input type="checkbox" name="docs" value="CPF"> CPF</label>
+            <label class="mei-check"><input type="checkbox" name="docs" value="Comprovante de endereço residencial"> Comprovante de endereço residencial</label>
+            <label class="mei-check"><input type="checkbox" name="docs" value="Comprovante do local da atividade"> Comprovante do local da atividade</label>
+            <label class="mei-check"><input type="checkbox" name="docs" value="Título de eleitor ou recibo IRPF"> Título de eleitor ou recibo de IRPF, se necessário</label>
+          </div>
+        </section>
+
+        <section class="mei-section">
+          <h2 class="mei-section-title">4. Privacidade</h2>
+          <div class="mei-checks">
+            <label class="mei-check"><input type="checkbox" id="auth1" required> Concordo que meus dados de contato e informações da atividade sejam usados para retorno profissional pelo MEICONTADOR.</label>
+            <label class="mei-check"><input type="checkbox" id="auth2" required> Autorizo receber contato por WhatsApp e e-mail sobre esta solicitação.</label>
+            <label class="mei-check"><input type="checkbox" id="auth3" required> Li e aceito a <a href="/privacidade" target="_blank" rel="noopener">Política de Privacidade</a>.</label>
+          </div>
+        </section>
+
+        <div class="mei-actions">
+          <button type="reset" class="btn btn-ghost">Limpar</button>
+          <button type="submit" class="btn btn-primary">Enviar pelo WhatsApp</button>
+        </div>
+        <p class="mei-privacy">Ao enviar, o WhatsApp será aberto com um resumo da sua solicitação. Dados sensíveis e documentos não são enviados automaticamente por este site.</p>
+      </form>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-bottom" style="justify-content:center; border:none; padding-top:0;">
+      <span>© <span id="year"></span> MEICONTADOR. Todos os direitos reservados.</span>
+      <a href="/privacidade">Política de Privacidade</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+document.getElementById('meiForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const getValue = (id) => document.getElementById(id).value.trim() || 'Não informado';
+  const docs = [...document.querySelectorAll('input[name="docs"]:checked')].map(item => item.value);
+
+  const message = [
+    'Olá! Preenchi o pré-formulário de abertura de MEI no site do MEICONTADOR.',
+    '',
+    `Nome: ${getValue('nome')}`,
+    `WhatsApp: ${getValue('telefone')}`,
+    `E-mail: ${getValue('email')}`,
+    `Cidade/UF: ${getValue('cidade')}`,
+    `Melhor horário: ${getValue('atendimento')}`,
+    '',
+    `Atividade/profissão: ${getValue('atividade')}`,
+    `Descrição: ${getValue('descricao')}`,
+    `Faturamento mensal estimado: ${getValue('faturamento')}`,
+    `Local de funcionamento: ${getValue('local')}`,
+    `Observações: ${getValue('observacoes')}`,
+    '',
+    `Documentos que já tenho: ${docs.length ? docs.join(', ') : 'Ainda preciso separar os documentos'}`,
+    '',
+    'Por favor, me oriente sobre os próximos passos e o envio seguro dos documentos.'
+  ].join('\n');
+
+  window.location.href = `https://wa.me/5527997755884?text=${encodeURIComponent(message)}`;
+});
+
+document.getElementById('telefone').addEventListener('input', function(event) {
+  let value = event.target.value.replace(/\D/g, '');
+  if (value.length > 11) value = value.substring(0, 11);
+  if (value.length > 7) value = `(${value.substring(0, 2)}) ${value.substring(2, 7)}-${value.substring(7)}`;
+  else if (value.length > 2) value = `(${value.substring(0, 2)}) ${value.substring(2)}`;
+  event.target.value = value;
+});
+</script>
+</body>
+</html>
