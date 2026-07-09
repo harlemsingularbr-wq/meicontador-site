@@ -66,4 +66,4 @@ Se o projeto receber um domínio próprio no futuro, atualizar:
 - Confirmar dados legais que devem aparecer na política de privacidade.
 - Validar depoimentos e autorização de uso dos nomes/empresas.
 - Informar domínio próprio, caso seja comprado.
-- Informar se haverá Google Analytics, Meta Pixel ou ferramenta de anúncios.
+- Informar se haverá Google Analytics, Meta Pixel ou ferramenta de anúncios além do Vercel Web Analytics.

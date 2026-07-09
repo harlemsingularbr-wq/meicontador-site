@@ -47,7 +47,7 @@ https://meicontador-site.vercel.app
 - [ ] Confirmar dados legais para política de privacidade.
 - [ ] Confirmar autorização de depoimentos.
 - [ ] Decidir se haverá domínio próprio.
-- [ ] Decidir se haverá Google Analytics ou Meta Pixel.
+- [ ] Decidir se haverá Google Analytics ou Meta Pixel além do Vercel Web Analytics.
 
 ## 5. Se houver domínio próprio
 

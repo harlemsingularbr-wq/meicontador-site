@@ -17,6 +17,7 @@ O pacote gerado anteriormente pelo Claude foi revisado e corrigido. A versão at
 - Textos de cookies ajustados ao que o site realmente faz hoje.
 - Claims comerciais fortes removidos ou suavizados.
 - `robots.txt` e `sitemap.xml` atualizados para o domínio inicial da Vercel.
+- Vercel Web Analytics ativado e integrado via script estático.
 - `@import` de fontes removido do CSS; fontes carregadas pelo `head`.
 - Logos com `width`, `height` e `decoding` quando aplicável.
 - Repositório preparado com `.gitignore`, `README.md` e `vercel.json`.
@@ -27,4 +28,4 @@ O pacote gerado anteriormente pelo Claude foi revisado e corrigido. A versão at
 - Confirmar dados legais da política de privacidade.
 - Confirmar autorização para uso dos depoimentos e nomes comerciais.
 - Confirmar se haverá domínio próprio no futuro.
-- Confirmar se haverá Google Analytics, Meta Pixel ou campanhas pagas.
+- Confirmar se haverá Google Analytics, Meta Pixel ou campanhas pagas além do Vercel Web Analytics.
